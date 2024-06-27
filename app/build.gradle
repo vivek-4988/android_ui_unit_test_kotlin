@@ -21,6 +21,8 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
+        buildConfigField("String", "PIXABAY_KEY", PIXABAY_APIKEY)
     }
 
     buildTypes {
@@ -40,12 +42,12 @@ android {
         jvmTarget = "17"
     }
     buildFeatures {
+        buildConfig = true
         viewBinding = true
     }
 }
 
 dependencies {
-
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.9.22'
     implementation 'androidx.core:core-ktx:1.13.1'
     implementation 'androidx.appcompat:appcompat:1.7.0'
