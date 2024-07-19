@@ -20,7 +20,6 @@ class ArtDetailsFragment @Inject constructor(
     private var fragmentBinding : FragmentArtDetailsBinding? = null
     lateinit var viewModel: ArtViewModel
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(requireActivity()).get(ArtViewModel::class.java)
